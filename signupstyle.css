@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=Open+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+
+}
+body{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+.wel{
+    font-size: 25px;
+    margin-bottom: 32px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4rem;
+}
+
+.Note {
+    width: 339px;
+    margin-left: 43px;
+}
+
+.emailandtext{
+    margin: 25px;
+    position: relative;
+    height: 50%;
+    width: 100% ;
+}
+.emailandtext input{
+    height: 39px;
+    width: 19rem;
+    border: 1px solid plum;
+    padding-left: 15px;
+    outline: none;
+    transition: .4s;
+    margin-right: 49px;
+    border-radius: 4px;
+}
+input:focus{
+    border: 1px solid #1DA1F2;
+}
+
+
+.emailandtext label{
+    position: absolute;
+    left: 3rem;
+    z-index: 99;
+    top: 1.1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: gray;
+    font-size: 12px;
+    transition: .4s;
+
+}
+
+.emailandtext input:valid ~ label,
+.emailandtext input:focus ~ label
+{
+    color: gray;
+    transform: translateY(-24px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    background: #fff;
+    
+}
+
+input:focus ~ label{
+    transform: translateY(-24px);
+    background: white;
+    color: #1DA1F2;
+    
+}
+.password {
+    margin: 25px;
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+.password input{
+    height: 39px;
+    width: 19rem;
+    border: 1px solid plum;
+    padding-left: 15px;
+    outline: none;
+    transition: .4s;
+    margin-right: 49px;
+    border-radius: 4px;
+}
+.password label{
+    position: absolute;
+    left: 3rem;
+    top: 1.1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 99;
+    color: gray;
+    font-size: 12px;
+    transition: .4s;
+}
+
+.password input:valid ~ label,
+.password input:focus ~ label
+{
+    color: gray;
+    transform: translateY(-24px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    background: #fff;
+    
+}
+
+
+.Confirmpassword{
+    margin: 25px;
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+.Confirmpassword input{
+    height: 39px;
+    width: 19rem;
+    border: 1px solid plum;
+    padding-left: 15px;
+    outline: none;
+    transition: .4s;
+    margin-right: 49px;
+    border-radius: 4px;
+}
+.Confirmpassword label{
+    position: absolute;
+    left: 3rem;
+    top: 1.1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 99;
+    color: gray;
+    font-size: 12px;
+    transition: .4s;
+}
+
+
+.Confirmpassword input:valid ~ label,
+.Confirmpassword input:focus ~ label
+{
+    color: gray;
+    transform: translateY(-24px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    background: #fff;
+    
+}
+
+.btn1{
+    width: 20rem;
+    height: 36px;
+    background: pink;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+p.signp {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+.signp a{
+    
+    text-decoration: none;
+    color: blue;
+}
+
+
+.or:before{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: block;
+    background: gray;
+    position: relative;
+    top: 13px;
+    left: 70px;
+}
+.or:after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: block;
+    background: gray;
+    position: relative;
+    top: -10px;
+    right: -225px;
+}
+
+
+.Sign{
+    display: grid;
+    justify-content: center;
+}
+
+.col{
+    display: flex;
+    /* justify-content: center; */
+    border: 2px solid plum;
+    padding: 6px;
+    gap: 10px;
+    text-align: center;
+    width: 308px;
+    margin-top: 20px;
+}
+.col img{
+    padding-left: 20px;
+}
+
+.col p{
+    display: flex;
+    align-items: center;
+}
+
+.Privacy ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    margin-top: 5rem;
+}
+.Privacy a {
+    text-decoration: none;
+    color: black;
+}
+
+@media  all and (max-width:900px){
+    .emailandtext label {
+        z-index: 99;
+        /* left: 3.4rem; */
+        top: 2.1rem;
+        left: 4.5rem;
+    }
+
+    .emailandtext label {
+        position: absolute;
+        left: 4.5rem;
+        z-index: 99;
+        top: 1.1rem;
+    }
+
+    .emailandtext input{
+        margin: 0rem;
+    }
+    .emailandtext{
+        margin: 0;
+    }
+    .Note {
+        margin-bottom: 2rem;
+    }
+    .or:before { 
+        left: 76px;
+    }
+    .or:after {
+        right: -223px;
+    }
+
+
+    .Privacy ul {
+        margin-top: 9rem;
+    }
+
+}
